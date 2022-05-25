@@ -1,0 +1,75 @@
+header .container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+header {
+  height: 100vh;
+}
+
+header .container-fluid {
+  height: 100vh;
+  background: url("https://picsum.photos/id/100/1920/1080") center top no-repeat;
+  background-size: cover;
+}
+
+.section-title {
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -40px;
+  background-color: #737373;
+}
+
+.feature {
+  background-color: #d2d2d2;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.feature .img-info {
+  margin-top: 2rem;
+}
+
+.story {
+  padding-top: 16rem;
+}
+
+@media screen and (max-width: 960px) {
+  .section-title {
+    margin-bottom: 6rem;
+  }
+
+  .feature-inner {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .feature-inner:last-child {
+    margin-bottom: 0;
+  }
+
+  .story .row {
+    margin-bottom: 6rem;
+  }
+
+  .story .row:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
